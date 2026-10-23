@@ -22,7 +22,9 @@ jobs:
       run: npm install
 
     - name: Build the app
-      run: npm run dist
+      run: npm run dist -- --publish never
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload the installer
       uses: actions/upload-artifact@v4
