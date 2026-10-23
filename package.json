@@ -1,0 +1,24 @@
+{
+  "name": "kuber-command-center",
+  "version": "1.0.0",
+  "description": "Personal command center for kuber",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.roninkershaw.kuber",
+    "productName": "Kuber Command Center",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
