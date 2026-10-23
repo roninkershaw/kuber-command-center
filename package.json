@@ -10,7 +10,6 @@
   },
   "build": {
     "appId": "com.roninkershaw.kuber",
-    "publish": "null",
     "productName": "Kuber Command Center",
     "win": {
       "target": "nsis"
